@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Волонтерські ініціативи</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('initiatives');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Платформа волонтерських ініціатив</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('initiatives')">Доступні ініціативи</a></li>
+                <li><a href="#" onclick="showSection('my-initiatives')">Мої ініціативи</a></li>
+                <li><a href="#" onclick="showSection('about')">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="initiatives">
+            <h2>Доступні ініціативи</h2>
+            <div class="grid-container">
+                <div class="initiative">
+                    <h3>Допомога бездомним</h3>
+                    <p><strong>Дата:</strong> 15 березня 2025</p>
+                    <p><strong>Місце:</strong> Київ, вул. Хрещатик, 20</p>
+                    <p><strong>Потрібно волонтерів:</strong> 10</p>
+                    <p>Надаємо харчування та одяг нужденним.</p>
+                </div>
+                <div class="initiative">
+                    <h3>Прибирання парку</h3>
+                    <p><strong>Дата:</strong> 20 березня 2025</p>
+                    <p><strong>Місце:</strong> Львів, парк "Знесіння"</p>
+                    <p><strong>Потрібно волонтерів:</strong> 15</p>
+                    <p>Організовуємо прибирання території та посадку дерев.</p>
+                </div>
+                <!-- Додати більше ініціатив -->
+            </div>
+        </section>
+        
+        <section id="my-initiatives" style="display: none;">
+            <h2>Мої ініціативи</h2>
+            <div class="my-initiatives">
+                <h3>Збір допомоги для дитячих будинків</h3>
+                <p><strong>Дата:</strong> 25 березня 2025</p>
+                <p><strong>Місце:</strong> Одеса, вул. Дерибасівська, 10</p>
+                <p><strong>Потрібно волонтерів:</strong> 20</p>
+                <p>Збираємо речі першої необхідності, іграшки та книжки для дітей.</p>
+            </div>
+            <div class="my-initiatives">
+                <h3>Екологічна акція "Чисте місто"</h3>
+                <p><strong>Дата:</strong> 30 березня 2025</p>
+                <p><strong>Місце:</strong> Харків, парк ім. Шевченка</p>
+                <p><strong>Потрібно волонтерів:</strong> 30</p>
+                <p>Прибираємо сміття та сортуємо відходи у паркових зонах.</p>
+            </div>
+        </section>
+        
+        <section id="about" style="display: none;">
+            <h2>Про нас</h2>
+            <p>
+                Платформа волонтерських ініціатив створена з метою об’єднання людей, 
+                які бажають допомагати та робити світ кращим. Ми сприяємо організації 
+                благодійних заходів, залучаємо волонтерів до різних соціальних та екологічних 
+                проєктів, а також допомагаємо знайти однодумців.
+            </p>
+            <p>
+                Наші основні напрямки діяльності:
+                <ul>
+                    <li>Допомога соціально незахищеним верствам населення;</li>
+                    <li>Екологічні ініціативи (прибирання, озеленення, сортування сміття);</li>
+                    <li>Збір коштів та речей для благодійних організацій;</li>
+                    <li>Підтримка освітніх програм та навчання волонтерів.</li>
+                </ul>
+            </p>
+            <p>
+                Ми віримо, що навіть невелика добра справа може зробити величезний внесок у суспільство.
+                Долучайтеся до наших ініціатив та разом ми створимо краще майбутнє!
+            </p>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Платформа волонтерських ініціатив</p>
+    </footer>
+</body>
+</html>
