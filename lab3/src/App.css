@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.initiative {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:disabled {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.about-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  font-size: 18px;
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.about-images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
